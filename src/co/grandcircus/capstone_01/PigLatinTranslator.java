@@ -1,4 +1,4 @@
-package co.grandcircus.fbjava_july2018.capstone_01;
+package co.grandcircus.capstone_01;
 
 import java.util.Scanner;
 
