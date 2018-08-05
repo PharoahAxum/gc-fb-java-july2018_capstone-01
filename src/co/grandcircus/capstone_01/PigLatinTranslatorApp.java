@@ -2,22 +2,16 @@ package co.grandcircus.capstone_01;
 
 import java.util.Scanner;
 
-public class PigLatinTranslator {
+// Task: Capstone Week 1 - Translate from English to Pig Latin.
 
-	//{ a, e, i, o, u}
-	//"pig"'length()=3
-	//pig = igpay
-	//apple = appleway
-	//schlep = epschay
-	//nymph = nymphway
-	//string scnrInput1;
-	//System.out.println("pig".charAt(0));
+public class PigLatinTranslatorApp {
 	
 	public static void main(String[] args) {
 		
 		Scanner scnr = new Scanner(System.in);
 		
 		String userInput;
+		String yeaNay;
 		
 		System.out.println("\tWelcome to the Pig Latin Translater!");
 		
@@ -25,11 +19,12 @@ public class PigLatinTranslator {
 			System.out.println("\tEnter a line to be translated: ");
 			userInput = scnr.nextLine();
 			
+			// test print
 			System.out.println(userInput);
 			
 			System.out.println("Do you want to translate another line? (y/n)");
-			userInput = scnr.nextLine();
-		} while (userInput.equals("y"));
+			yeaNay = scnr.nextLine();
+		} while (yeaNay.equals("y"));
 		
 		System.out.println("Goodbye.");
 		
@@ -40,14 +35,17 @@ public class PigLatinTranslator {
 
 }
 
+// { a, e, i, o, u}
+// "pig"'length()=3
+// pig = igpay
+// apple = appleway
+// schlep = lepschway
+// nymph = nymphway
+// string scnrInput1;
+// System.out.println("pig".charAt(0));
+//
+//	Single word example:
 //	https://stackoverflow.com/questions/22420118/writing-a-java-program-that-converts-an-english-word-into-piglatin
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
 
