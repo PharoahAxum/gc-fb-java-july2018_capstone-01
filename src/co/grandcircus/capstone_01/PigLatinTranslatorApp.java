@@ -10,26 +10,32 @@ public class PigLatinTranslatorApp {
 		
 		Scanner scnr = new Scanner(System.in);
 		
-		String userInput;
-		String yeaNay;
+		String userInput, yeaNay; // pigLatinTranslate;
 		
 		System.out.println("\tWelcome to the Pig Latin Translater!");
 		
 		do {
-			System.out.println("\tEnter a line to be translated: ");
-			userInput = scnr.nextLine();
-			// format the string to ignore uppercase. (and later do one for special characters) 
+			System.out.println("\tEnter a word to be translated: ");
+			// TODO translate sentences instead of a word.
+			// format the string to make all characters lower case.
+			userInput = scnr.next().toLowerCase();
+			// TODO format string to ignore special characters.) 
 			
+			//if (userInput == "test" ) {
+				System.out.println(userInput + "yay .");
+			//}			
 			// go to methods:
 				// go to method for words that start with a vowel.
 				// go to method for words that start with a consonant.
 			
 			// test print
-			System.out.println(userInput);
+			//System.out.println(userInput);
 			
 			// TODO add better validation. 
-			System.out.println("\tDo you want to translate another line? (y/n)");
-			yeaNay = scnr.nextLine();
+			System.out.println("");
+			System.out.print("\tWould you like to translate another word? (y/n)"); //update 'word' to 'line'.
+				yeaNay = scnr.next();
+		
 		} while (yeaNay.equals("y"));
 		
 			System.out.println("\tGoodbye.");
@@ -41,10 +47,10 @@ public class PigLatinTranslatorApp {
 	
 	
 	// Method for words that start with a vowel.
-	public static String wordStartsWithVowel(String vowelFirst) {
+//	public static String wordStartsWithVowel(String vowelFirst) {
 		// Simple method that adds 'way' at the end of the original word.
-		return vowelFirst + "way";
-	}
+//		return vowelFirst + "way";
+//	}
 
 	// Method for words that start with a consonant, hint via TA.)
 	//public static int findFirstInt (String word) {
